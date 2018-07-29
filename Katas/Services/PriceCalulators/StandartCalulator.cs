@@ -12,7 +12,7 @@ namespace Katas.Services.PriceCalulators
     {
         public int Calculate(BasketItem item)
         {
-            return item.Quatity * item.UnitPrice;
+            return item.Quantity * item.StockItem.UnitPrice;
         }
     }
 }

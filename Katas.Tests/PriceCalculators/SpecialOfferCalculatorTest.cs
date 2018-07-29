@@ -20,12 +20,15 @@ namespace Katas.Tests.PriceCalculators
             var item = new BasketItem()
             {
                 SKU = "a",
-                Quatity = 10,
-                UnitPrice = 100,
-                Offer = new SpecialOffer()
+                Quantity = 10,
+                StockItem = new StockItem()
                 {
-                    Price = 200,
-                    Qty = 3
+                    UnitPrice = 100,
+                    Offer = new SpecialOffer()
+                    {
+                        Price = 200,
+                        Qty = 3
+                    }
                 }
             };
 

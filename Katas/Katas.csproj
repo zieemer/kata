@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Contracts\ICheckout.cs" />
     <Compile Include="DependencyConfig.cs" />
+    <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\PromoTypes.cs" />
     <Compile Include="Models\SpecialOffer.cs" />
     <Compile Include="Models\StockItem.cs" />

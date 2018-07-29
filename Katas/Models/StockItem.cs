@@ -16,8 +16,10 @@ namespace Katas.Models
 
     }
 
-    public class BasketItem : StockItem
+    public class BasketItem
     {
-        public int Quatity { get; set; }
+        public string SKU { get; set; }
+        public int Quantity { get; set; }
+        public StockItem StockItem { get; set; }
     }
 }
