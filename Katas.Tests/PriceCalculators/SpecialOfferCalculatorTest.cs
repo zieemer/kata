@@ -7,15 +7,15 @@ namespace Katas.Tests.PriceCalculators
     [TestFixture]
     public class SpecialOfferCalculatorTest
     {
-        private SpecialOfferCalculator sut;
+        private SpecialOfferTotalCalculator sut;
 
         [SetUp]
         public void SetUp()
         {
-            sut = new SpecialOfferCalculator();
+            sut = new SpecialOfferTotalCalculator();
         }
         [Test]
-        public void TestMethod()
+        public void ShoulCalculatePromoPrice()
         {
             var item = new BasketItem()
             {

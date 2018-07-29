@@ -7,17 +7,17 @@ namespace Katas.Tests.PriceCalculators
     [TestFixture]
     public class StandartClassCalulatorTests
     {
-        private StandartCalulator sut;
+        private NoPromoTotalCalulator sut;
 
 
         [SetUp]
         public void SetUp()
         {
-            sut = new StandartCalulator();
+            sut = new NoPromoTotalCalulator();
 
         }
         [Test]
-        public void TestMethod()
+        public void ShouldCalulateStandardPrice()
         {
             var item = new BasketItem()
             {

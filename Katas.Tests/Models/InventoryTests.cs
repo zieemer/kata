@@ -1,16 +1,13 @@
-﻿using NUnit.Framework;
-using Katas.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using AutoFixture;
+using Katas.Models;
+using Katas.Services;
+using NUnit.Framework;
 
-namespace Katas.Models.Tests
+namespace Katas.Tests.Models
 {
     [TestFixture]
-    public class InventoryTests
+    public class InventoryServiceTests
     {
 
         private InventoryService sut;
@@ -25,14 +22,34 @@ namespace Katas.Models.Tests
         }
 
 
-        [Test()]
+        [Test]
         public void ShouldBeAbleAddStockItemToInventry()
         {
             var stockItem = fixture.Create<StockItem>();
             sut.Add(stockItem);
-            
-
             Assert.AreEqual(stockItem,  sut.GetById(stockItem.SKU));
+        }
+
+        [Test]
+        public void ShouldBeAbleToGetAllStock()
+        {
+            var stockItems = fixture.CreateMany<StockItem>(10);
+
+            foreach (var stockItem in stockItems)
+            {
+                sut.Add(stockItem);
+            }
+           
+            Assert.AreEqual(10, sut.GetAll().Count());
+        }
+
+        [Test]
+
+        public void ShouldSeedAddStockToService()
+        {
+            sut.SeedStock();
+
+            Assert.IsTrue(sut.GetAll().Count()==4);
         }
     }
 }

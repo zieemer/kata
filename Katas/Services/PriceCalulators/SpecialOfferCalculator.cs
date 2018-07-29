@@ -1,8 +1,9 @@
-﻿using Katas.Models;
+﻿using Katas.Contracts;
+using Katas.Models;
 
 namespace Katas.Services.PriceCalulators
 {
-    public class SpecialOfferCalculator : IPriceCalulator
+    public class SpecialOfferTotalCalculator : ITotalLineCalculatorStrategy
     {
         public int Calculate(BasketItem item)
         {

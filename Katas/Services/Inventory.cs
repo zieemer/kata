@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Katas.Contracts;
+using Katas.Models;
 
-namespace Katas.Models
+namespace Katas.Services
 {
-    public interface IInventoryService
-    {
-        void Add(StockItem stock);
-        StockItem GetById(string sku);
-    }
-
     public class InventoryService : IInventoryService
     {
         private Dictionary<string,StockItem> Stocks { get; }
@@ -19,14 +12,9 @@ namespace Katas.Models
         public InventoryService()
         {
             Stocks = new Dictionary<string, StockItem>();
-
-            //TODO
-            InitStock();
-
-
         }
 
-        private void InitStock()
+        public void SeedStock()
         {
             var stockA = new StockItem()
             {
@@ -93,6 +81,11 @@ namespace Katas.Models
             {
                 return null;
             }
+        }
+
+        public IEnumerable<StockItem> GetAll()
+        {
+            return Stocks.Select(s => s.Value).ToList();
         }
     }
 }

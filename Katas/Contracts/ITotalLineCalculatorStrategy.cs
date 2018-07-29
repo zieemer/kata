@@ -1,8 +1,8 @@
 ﻿using Katas.Models;
 
-namespace Katas.Services.PriceCalulators
+namespace Katas.Contracts
 {
-    public interface IPriceCalulator
+    public interface ITotalLineCalculatorStrategy
     {
         int Calculate(BasketItem item);
     }

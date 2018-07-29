@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Katas.Contracts;
+using Katas.Models;
 using Katas.Services;
 using SimpleInjector;
 
@@ -17,6 +18,7 @@ namespace Katas
         {
             Container = new Container();
             Container.Register<ICheckout, Checkout>();
+            Container.Register<IInventoryService, InventoryService>(Lifestyle.Singleton);
         }
 
         public static T GetInstance<T>() where T : class

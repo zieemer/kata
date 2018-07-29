@@ -1,20 +1,21 @@
 ﻿using System.Collections.Generic;
+using Katas.Contracts;
 using Katas.Models;
 using Katas.Services.PriceCalulators;
 
 namespace Katas.Services
 {
-    public class PricingMethod
+    public class TotalLineCalculatorStrategy
     {
-        public static IPriceCalulator Get(StockItem item)
+        public static ITotalLineCalculatorStrategy Get(StockItem item)
         {
             if (item.Offer != null)
             {
-                return new SpecialOfferCalculator();
+                return new SpecialOfferTotalCalculator();
             }
             else
             {
-                return new StandartCalulator();
+                return new NoPromoTotalCalulator();
             }
         }
     }

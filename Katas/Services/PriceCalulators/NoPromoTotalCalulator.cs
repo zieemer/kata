@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Katas.Contracts;
 using Katas.Models;
 
 namespace Katas.Services.PriceCalulators
 {
 
-    public class StandartCalulator : IPriceCalulator
+    public class NoPromoTotalCalulator : ITotalLineCalculatorStrategy
     {
         public int Calculate(BasketItem item)
         {
