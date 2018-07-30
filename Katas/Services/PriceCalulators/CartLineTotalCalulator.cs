@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Katas.Contracts;
+﻿using Katas.Contracts;
 using Katas.Models;
+using System;
+using System.Linq;
 
 namespace Katas.Services.PriceCalulators
 {

@@ -1,17 +1,41 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Katas.Contracts;
+﻿using Katas.Contracts;
 using Katas.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Katas.Services
 {
     public class InventoryService : IInventoryService
     {
-        private Dictionary<string,StockItem> Stocks { get; }
 
         public InventoryService()
         {
             Stocks = new Dictionary<string, StockItem>();
+        }
+
+        private Dictionary<string, StockItem> Stocks { get; }
+
+        public void Add(StockItem stock)
+        {
+            Stocks.Add(stock.SKU, stock);
+        }
+
+        public IEnumerable<StockItem> GetAll()
+        {
+            return Stocks.Select(s => s.Value).ToList();
+        }
+
+        public StockItem GetById(string sku)
+        {
+            if (Stocks.ContainsKey(sku))
+            {
+                return Stocks[sku];
+            }
+
+            else
+            {
+                return null;
+            }
         }
 
         public void SeedStock()
@@ -28,7 +52,7 @@ namespace Katas.Services
 
             };
 
-            Stocks.Add(stockA.SKU,stockA);
+            Stocks.Add(stockA.SKU, stockA);
 
             var stockB = new StockItem()
             {
@@ -48,7 +72,7 @@ namespace Katas.Services
             {
                 SKU = "C",
                 UnitPrice = 20
-                
+
 
             };
 
@@ -58,34 +82,11 @@ namespace Katas.Services
             {
                 SKU = "D",
                 UnitPrice = 15,
-               
+
 
             };
 
             Stocks.Add(stockD.SKU, stockD);
-        }
-
-        public void Add(StockItem stock)
-        {
-            Stocks.Add(stock.SKU, stock);
-        }
-
-        public StockItem GetById(string sku)
-        {
-            if (Stocks.ContainsKey(sku))
-            {
-                return Stocks[sku];
-            }
-
-            else
-            {
-                return null;
-            }
-        }
-
-        public IEnumerable<StockItem> GetAll()
-        {
-            return Stocks.Select(s => s.Value).ToList();
         }
     }
 }

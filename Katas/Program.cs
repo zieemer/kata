@@ -1,13 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using Katas.Contracts;
-using Katas.Models;
-using Katas.Services;
+using System;
+using System.Linq;
 
 namespace Katas
 {
@@ -16,8 +9,8 @@ namespace Katas
 
         private static IInventoryService _inventoryService;
         private static ICheckout _checkout;
-        
-        static void Main(string[] args)
+
+        static void Main()
         {
 
             DependencyConfig.Setup();
@@ -36,25 +29,21 @@ namespace Katas
 
         private static void Prompt()
         {
-            Console.WriteLine("");
-            Console.WriteLine("Please type in sku to add item to basket or x to exit");
+            Console.WriteLine(string.Empty);
+            Console.WriteLine("Please type in SKU [A,B,C,D] to add item to basket or press 'X' to exit");
 
-            foreach (var item in _inventoryService.GetAll())
-            {
-                Console.WriteLine($"SKU: {item.SKU}");
-            }
 
             var sku = Console.ReadKey().Key.ToString();
             Console.WriteLine();
-            if(sku!="X") ShowBasket(sku);
+            if (sku != "X") ShowBasket(sku);
         }
 
         private static void ShowBasket(string sku)
         {
 
             _checkout.Scan(sku);
-            Console.WriteLine($"Your basket total is: {_checkout.GetTotal()}");
-            Console.WriteLine("------------------------------");
+            Console.WriteLine($" Total is: {_checkout.GetTotal()}        |");
+            Console.WriteLine("----------------------|");
             Console.WriteLine();
 
             Prompt();

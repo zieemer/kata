@@ -25,7 +25,7 @@ namespace Katas.Tests.PriceCalculators
                 Quantity = 10,
                 StockItem = new StockItem()
                 {
-                  
+
                     UnitPrice = 100,
                     Offer = new SpecialOffer()
                     {

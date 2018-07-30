@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Katas.Models;
+﻿using Katas.Models;
+using System.Collections.Generic;
 
 namespace Katas.Contracts
 {

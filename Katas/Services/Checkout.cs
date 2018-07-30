@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Katas.Contracts;
+﻿using Katas.Contracts;
 using Katas.Models;
 using Katas.Services.PriceCalulators;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Katas.Services
 {
@@ -18,7 +16,7 @@ namespace Katas.Services
         {
             _cart = new Dictionary<string, BasketItem>();
             _inventoryService = inventoryService;
-           
+
         }
         public int GetTotal()
         {
@@ -50,12 +48,15 @@ namespace Katas.Services
                 _cart.Add(stockItem.SKU, basketItem);
             }
 
-            Console.WriteLine("In your basket:");
+            Console.WriteLine("Your Shopping Basket:");
+            Console.WriteLine("----------------------|");
+            Console.WriteLine("| Item SKU | Qty      |");
+            Console.WriteLine("----------------------|");
             foreach (var item in _cart)
             {
-                Console.WriteLine($"Item {item.Key} * {item.Value.Quantity}");
+                Console.WriteLine($"| Item {item.Key}   | {item.Value.Quantity}        ");
             }
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("----------------------|");
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using AutoFixture;
+﻿using AutoFixture;
 using Katas.Models;
 using Katas.Services;
 using NUnit.Framework;
+using System.Linq;
 
 namespace Katas.Tests.Models
 {
@@ -27,7 +27,7 @@ namespace Katas.Tests.Models
         {
             var stockItem = fixture.Create<StockItem>();
             sut.Add(stockItem);
-            Assert.AreEqual(stockItem,  sut.GetById(stockItem.SKU));
+            Assert.AreEqual(stockItem, sut.GetById(stockItem.SKU));
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace Katas.Tests.Models
             {
                 sut.Add(stockItem);
             }
-           
+
             Assert.AreEqual(10, sut.GetAll().Count());
         }
 
@@ -49,7 +49,7 @@ namespace Katas.Tests.Models
         {
             sut.SeedStock();
 
-            Assert.IsTrue(sut.GetAll().Count()==4);
+            Assert.IsTrue(sut.GetAll().Count() == 4);
         }
     }
 }

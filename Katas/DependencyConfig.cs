@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Katas.Contracts;
-using Katas.Models;
+﻿using Katas.Contracts;
 using Katas.Services;
 using SimpleInjector;
+using System;
+using System.Linq;
 
 namespace Katas
 {

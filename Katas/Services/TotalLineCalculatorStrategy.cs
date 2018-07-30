@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Katas.Contracts;
+﻿using Katas.Contracts;
 using Katas.Models;
 using Katas.Services.PriceCalulators;
 
