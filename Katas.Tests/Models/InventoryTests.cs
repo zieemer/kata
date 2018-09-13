@@ -10,14 +10,14 @@ namespace Katas.Tests.Models
     public class InventoryServiceTests
     {
 
-        private InventoryService sut;
-        private Fixture fixture;
+        private InventoryService _sut;
+        private Fixture _fixture;
 
         [SetUp]
         public void Init()
         {
-            sut = new InventoryService();
-            fixture = new Fixture();
+            _sut = new InventoryService();
+            _fixture = new Fixture();
 
         }
 
@@ -25,31 +25,31 @@ namespace Katas.Tests.Models
         [Test]
         public void ShouldBeAbleAddStockItemToInventry()
         {
-            var stockItem = fixture.Create<StockItem>();
-            sut.Add(stockItem);
-            Assert.AreEqual(stockItem, sut.GetById(stockItem.SKU));
+            var stockItem = _fixture.Create<StockItem>();
+            _sut.Add(stockItem);
+            Assert.AreEqual(stockItem, _sut.GetById(stockItem.SKU));
         }
 
         [Test]
         public void ShouldBeAbleToGetAllStock()
         {
-            var stockItems = fixture.CreateMany<StockItem>(10);
+            var stockItems = _fixture.CreateMany<StockItem>(10);
 
             foreach (var stockItem in stockItems)
             {
-                sut.Add(stockItem);
+                _sut.Add(stockItem);
             }
 
-            Assert.AreEqual(10, sut.GetAll().Count());
+            Assert.AreEqual(10, _sut.GetAll().Count());
         }
 
         [Test]
 
         public void ShouldSeedAddStockToService()
         {
-            sut.SeedStock();
+            _sut.SeedStock();
 
-            Assert.IsTrue(sut.GetAll().Count() == 4);
+            Assert.IsTrue(_sut.GetAll().Count() == 4);
         }
     }
 }
