@@ -1,1 +1,1 @@
-katas
+Checkout Kata
