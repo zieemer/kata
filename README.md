@@ -1,4 +1,5 @@
-Checkout
+<h1>Checkout</h1>
+
 [Based on the Kata09 at codekata.com]
 
 We're going to implement a supermarket checkout that calculates the total price of a number of items. In a normal supermarket, things are identified using Stock Keeping Units, or SKUs. In our store, we’ll use individual letters of the alphabet (A, B, C, and so on). Our goods are priced individually.
