@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Checkout", "Checkout", "{8A62BEAF-FD4F-409D-B312-2D27A42AD3B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SumOfNumbers", "SumOfNumbers", "{7AC6BCB9-01CE-4035-A4A4-EA4BF62A922B}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfNumbers.Tests", "SumOfNumbers\SumOfNumbers.Tests\SumOfNumbers.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
 EndProject
