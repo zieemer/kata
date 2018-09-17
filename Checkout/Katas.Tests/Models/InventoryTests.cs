@@ -1,10 +1,10 @@
-﻿using AutoFixture;
-using Katas.Models;
-using Katas.Services;
+﻿using System.Linq;
+using AutoFixture;
+using Checkout.Models;
+using Checkout.Services;
 using NUnit.Framework;
-using System.Linq;
 
-namespace Katas.Tests.Models
+namespace Checkout.Tests.Models
 {
     [TestFixture]
     public class InventoryServiceTests

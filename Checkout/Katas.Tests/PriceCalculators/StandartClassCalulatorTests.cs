@@ -1,8 +1,8 @@
-﻿using Katas.Models;
-using Katas.Services.PriceCalulators;
+﻿using Checkout.Models;
+using Checkout.Services.PriceCalulators;
 using NUnit.Framework;
 
-namespace Katas.Tests.PriceCalculators
+namespace Checkout.Tests.PriceCalculators
 {
     [TestFixture]
     public class StandartClassCalulatorTests

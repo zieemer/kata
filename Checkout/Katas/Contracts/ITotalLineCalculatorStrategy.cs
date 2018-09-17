@@ -1,6 +1,6 @@
-﻿using Katas.Models;
+﻿using Checkout.Models;
 
-namespace Katas.Contracts
+namespace Checkout.Contracts
 {
     public interface ITotalLineCalculatorStrategy
     {

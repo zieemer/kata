@@ -1,7 +1,7 @@
-﻿using Katas.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Checkout.Models;
 
-namespace Katas.Contracts
+namespace Checkout.Contracts
 {
     public interface IInventoryService
     {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace Katas.Contracts
+﻿namespace Checkout.Contracts
 {
     public interface ICheckout
     {

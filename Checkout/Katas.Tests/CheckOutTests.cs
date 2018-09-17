@@ -1,18 +1,14 @@
-﻿using Katas.Contracts;
-using Katas.Models;
-using Katas.Services;
+﻿using Checkout.Contracts;
+using Checkout.Models;
 using Moq;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
-using System;
-using System.Linq;
 
-namespace Katas.Tests
+namespace Checkout.Tests
 {
     [TestFixture]
     public class CheckOutTests
     {
-        private Checkout sut;
+        private Checkout.Services.Checkout sut;
 
 
         [SetUp]
@@ -46,7 +42,7 @@ namespace Katas.Tests
             moqInventoryService.Setup(s => s.GetById("A")).Returns(itemA);
             moqInventoryService.Setup(s => s.GetById("B")).Returns(itemB);
 
-            sut = new Checkout(moqInventoryService.Object);
+            sut = new Checkout.Services.Checkout(moqInventoryService.Object);
         }
         [Test]
         public void ShouldPriceForTwoBAndOneABe95()

@@ -1,8 +1,7 @@
-using Katas.Contracts;
 using System;
-using System.Linq;
+using Checkout.Contracts;
 
-namespace Katas
+namespace Checkout
 {
     class Program
     {

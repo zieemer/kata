@@ -1,11 +1,11 @@
-﻿using Katas.Contracts;
-using Katas.Models;
-using Katas.Services.PriceCalulators;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Checkout.Contracts;
+using Checkout.Models;
+using Checkout.Services.PriceCalulators;
 
-namespace Katas.Services
+namespace Checkout.Services
 {
     public class Checkout : ICheckout
     {

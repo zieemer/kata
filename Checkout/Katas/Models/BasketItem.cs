@@ -1,4 +1,4 @@
-﻿namespace Katas.Models
+﻿namespace Checkout.Models
 {
     public class BasketItem
     {

@@ -1,7 +1,7 @@
-﻿using Katas.Contracts;
-using Katas.Models;
+﻿using Checkout.Contracts;
+using Checkout.Models;
 
-namespace Katas.Services.PriceCalulators
+namespace Checkout.Services.PriceCalulators
 {
     public class SpecialOfferTotalCalculator : ITotalLineCalculatorStrategy
     {

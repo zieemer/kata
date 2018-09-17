@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace Katas.Models
+﻿namespace Checkout.Models
 {
     public class StockItem
     {

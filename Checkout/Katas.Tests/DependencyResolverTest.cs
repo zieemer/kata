@@ -1,10 +1,7 @@
-﻿using Katas.Contracts;
-using Katas.Services;
+﻿using Checkout.Contracts;
 using NUnit.Framework;
-using System;
-using System.Linq;
 
-namespace Katas.Tests
+namespace Checkout.Tests
 {
     [TestFixture]
     public class DependencyResolverTest
@@ -20,7 +17,7 @@ namespace Katas.Tests
         public void ShouldDependencyRosolverWork()
         {
             var checkout = DependencyConfig.GetInstance<ICheckout>();
-            Assert.True(checkout.GetType() == typeof(Checkout));
+            Assert.True(checkout.GetType() == typeof(Checkout.Services.Checkout));
 
         }
 

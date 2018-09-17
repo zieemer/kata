@@ -1,9 +1,7 @@
-﻿using Katas.Contracts;
-using Katas.Models;
-using System;
-using System.Linq;
+﻿using Checkout.Contracts;
+using Checkout.Models;
 
-namespace Katas.Services.PriceCalulators
+namespace Checkout.Services.PriceCalulators
 {
 
     public class NoPromoTotalCalulator : ITotalLineCalculatorStrategy

@@ -1,10 +1,8 @@
-﻿using Katas.Contracts;
-using Katas.Services;
+﻿using Checkout.Contracts;
+using Checkout.Services;
 using SimpleInjector;
-using System;
-using System.Linq;
 
-namespace Katas
+namespace Checkout
 {
     public static class DependencyConfig
     {
@@ -13,7 +11,7 @@ namespace Katas
         public static void Setup()
         {
             Container = new Container();
-            Container.Register<ICheckout, Checkout>();
+            Container.Register<ICheckout, Services.Checkout>();
             Container.Register<IInventoryService, InventoryService>(Lifestyle.Singleton);
         }
 
