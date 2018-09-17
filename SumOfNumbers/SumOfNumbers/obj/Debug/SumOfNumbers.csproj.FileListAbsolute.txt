@@ -1,0 +1,7 @@
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\bin\Debug\SumOfNumbers.exe.config
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\bin\Debug\SumOfNumbers.exe
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\bin\Debug\SumOfNumbers.pdb
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\obj\Debug\SumOfNumbers.csprojAssemblyReference.cache
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\obj\Debug\SumOfNumbers.csproj.CoreCompileInputs.cache
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\obj\Debug\SumOfNumbers.exe
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers\obj\Debug\SumOfNumbers.pdb

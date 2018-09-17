@@ -1,0 +1,12 @@
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\SumOfNumbers.Tests.dll
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\SumOfNumbers.Tests.pdb
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\nunit.framework.dll
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\nunit.framework.xml
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\obj\Debug\SumOfNumbers.Tests.csprojAssemblyReference.cache
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\obj\Debug\SumOfNumbers.Tests.csproj.CoreCompileInputs.cache
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\obj\Debug\SumOfNumbers.Tests.csproj.CopyComplete
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\obj\Debug\SumOfNumbers.Tests.dll
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\obj\Debug\SumOfNumbers.Tests.pdb
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\SumOfNumbers.exe
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\SumOfNumbers.pdb
+C:\Users\sylwester.ziemer\source\repos\_github\katas\SumOfNumbers\SumOfNumbers.Tests\bin\Debug\SumOfNumbers.exe.config
